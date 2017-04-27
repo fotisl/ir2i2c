@@ -72,6 +72,17 @@ For avrdude, you should add the following options:
 If you use a NEC remote control, the REPEAT code is translated to the previous
 IR received.
 
+Furthermore, I found it to be more stable if you add a small delay after the
+endTransmission() and before the requestFrom() call. For example:
+
+```
+Wire.beginTransmission(0x10);
+Wire.write(byte(0x01));
+Wire.endTransmission();
+delay(10);
+Wire.requestFrom(0x10, 1);
+```
+
 ## License
 
 The code is licensed under the BSD 3-clause "New" or "Revised" License.
