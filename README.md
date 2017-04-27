@@ -1,5 +1,8 @@
 # I2C slave for IR decoding
 
+[![License](https://img.shields.io/badge/license-BSD%203--Clause-green.svg)](https://raw.githubusercontent.com/fotisl/ir2i2c/master/LICENSE)
+[![Build Status](https://travis-ci.org/fotisl/ir2i2c.svg?branch=master)](https://travis-ci.org/fotisl/ir2i2c)
+
 ## Introduction
 
 A simple I2C slave running at an attiny85 for decoding IR signals.
